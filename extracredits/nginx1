@@ -11,7 +11,7 @@ WORKDIR /usr/share/nginx/html/
 # Copy our content file
 COPY version.txt /usr/share/nginx/html/
 
-# Expose port 8080 to the world
+# Expose port 80 to the world
 EXPOSE 80
 
 
