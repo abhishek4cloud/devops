@@ -1,0 +1,17 @@
+
+# Start from the base image
+FROM nginx
+
+# Add maintainer info
+LABEL maintainer="abhishek4cloud@gmail.com"
+
+# Create working directory
+WORKDIR /usr/share/nginx/html/
+
+# Copy our content file
+COPY version.txt /usr/share/nginx/html/
+
+# Expose port 80 to the world
+EXPOSE 80
+
+
